@@ -1,0 +1,79 @@
+
+body {
+	background-image:url(http://goplek-net.s3.amazonaws.com/56a0222b741f9-soccer-landing-background.png);
+	background-size: cover;
+}
+
+
+#header-container img {
+	width: 60px;
+	min-width: 60px;
+}
+
+#header-container .logo  {
+	width: 100px;
+	text-align: center;
+}
+
+.top-bar ul{
+	background-color: rgba(230,230,230,.0);
+}
+
+.top-bar {
+	
+	background-color: rgba(230,230,230,.6);
+	border-radius: 10px;
+}
+
+.top-bar a {
+	color: white;
+	font-family: 'Francois One', sans-serif;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+.menu .vertical {
+	background-color: rgba(113,65,128,1);
+	border-radius: 10px;
+}
+
+.menu .vertical .porteros a:after {
+	content: url(../assets/img/portero.png);
+	font-size: 25px;
+	top: 3%;
+	right: 10px;
+}
+.menu .vertical .defensas a:after {
+	content: url(../assets/img/defensas.png);
+	font-size: 25px;
+	top: 23%;
+	right: 10px;
+}
+
+.menu .vertical .medios a:after {
+	content: url(../assets/img/medios.png);
+	font-size: 25px;
+	top: 42%;
+	right: 10px;
+}
+
+.menu .vertical .delanteros a:after {
+	content: url(../assets/img/delanteros.png);
+	font-size: 25px;
+	top: 63%;
+	right: 10px;
+}
+
+.menu .vertical .entrenadores a:after {
+	content: url(../assets/img/entrenadores.png);
+	font-size: 25px;
+	top: 83%;
+	right: 10px;
+}
+
+
+@media screen and (min-width: 64em) {
+	.top-bar-right {
+		margin-right: 50px;
+	}
+}
