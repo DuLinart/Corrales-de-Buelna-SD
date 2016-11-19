@@ -17,7 +17,8 @@
             <div class="top-bar-left">
               <ul class="dropdown menu align-center" data-dropdown-menu>
                 <a class="logo" href="index.html"><img src="assets/img/Escudo_CorralesdeBuelnaSD.png" alt="Logo Corrales de Buelna"></a>
-                <li><a href="#">Historia</a></li>
+                <li class="active"><a href="#">Inicio</a></li>
+                <li ><a href="#">Historia</a></li>
                 <li>
                   <a href="#">Jugadores</a>
                   <ul class="menu vertical">
@@ -40,6 +41,37 @@
             </div>
           </div>
         </header>
+
+        <div id="banner-container">
+          <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+            <ul class="orbit-container">
+              <button class="orbit-previous"><span class="show-for-sr">Slide previo</span>&#9664;&#xFE0E;</button>
+              <button class="orbit-next"><span class="show-for-sr">Siguiente Slide</span>&#9654;&#xFE0E;</button>
+              <li class="is-active orbit-slide">
+                <img class="orbit-image" src="assets/img/slide.svg" alt="Slide1">
+                <figcaption class="orbit-caption">Slide1.</figcaption>
+              </li>
+              <li class="orbit-slide">
+                <img class="orbit-image" src="assets/img/slide.svg" alt="Slide2">
+                <figcaption class="orbit-caption">Slide2.</figcaption>
+              </li>
+              <li class="orbit-slide">
+                <img class="orbit-image" src="assets/img/slide.svg" alt="Slide3">
+                <figcaption class="orbit-caption">Slide3.</figcaption>
+              </li>
+              <li class="orbit-slide">
+                <img class="orbit-image" src="assets/img/slide.svg" alt="Slide4">
+                <figcaption class="orbit-caption">Slide4.</figcaption>
+              </li>
+            </ul>
+            <nav class="orbit-bullets">
+              <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+              <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+              <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+              <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+            </nav>
+          </div>
+        </div>
       </section>
     </div>
 
