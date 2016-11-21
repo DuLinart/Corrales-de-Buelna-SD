@@ -2,9 +2,52 @@
 body {
 	background-image:url(http://goplek-net.s3.amazonaws.com/56a0222b741f9-soccer-landing-background.png);
 	background-size: cover;
-	width: 100%;
+	
 }
 
+#header-container .menu-off-canvas {
+	text-align: center;
+	background-color: #8C6098;
+	margin-bottom: 15px;
+	
+}
+
+#offCanvas .menu.vertical > li > a,
+.Submenu-off a {
+	color: white;
+	font-family: 'Francois One', sans-serif;
+}
+
+.close-button {
+	background-color: white;
+    z-index: 1;
+}
+
+#menu-off-canvas,
+.Submenu-off {
+	background-color: #8C6098;
+	height: 230px;
+}
+.is-drilldown-submenu-parent > a::after {
+	 border-color:transparent transparent transparent #ffffff;
+}
+
+.js-drilldown-back > a::before {
+	border-color: transparent white transparent transparent;
+}
+
+#header-container .menu-off-canvas a {
+	
+	font-family: 'Francois One', sans-serif;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: white;
+}
+#encabezado-container {
+	background-image:url(http://goplek-net.s3.amazonaws.com/56a0222b741f9-soccer-landing-background.png);
+	background-size: cover;
+	width: 100%;
+}
 
 #header-container img {
 	width: 60px;
@@ -95,7 +138,7 @@ body {
 	max-height: auto;
 }
 
-#banner-container img{
+#header-container  img{
 	max-height: 400px;
 		
 }
