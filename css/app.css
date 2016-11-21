@@ -8,7 +8,7 @@ body {
 #header-container .menu-off-canvas {
 	text-align: center;
 	background-color: #8C6098;
-	margin-bottom: 15px;
+	
 	
 }
 
@@ -47,6 +47,7 @@ body {
 	background-image:url(http://goplek-net.s3.amazonaws.com/56a0222b741f9-soccer-landing-background.png);
 	background-size: cover;
 	width: 100%;
+	border-bottom: 4px solid white;
 }
 
 #header-container img {
@@ -143,21 +144,18 @@ body {
 		
 }
 
-@media screen and (min-width: 64em) {
-	.top-bar-right {
-		margin-right: 50px;
-	}
-	#banner-container {
-		margin-left: 120px;
-		margin-right: 120px;
-	}
+#historia-container img {
+	width: 150px;
 
 }
 
+.orbit-bullets {
+	margin-bottom: 0px;
+}
+
 #historia-container {
-	border-top: 4px solid white;
+	
 	border-bottom: 4px solid white;
-	/*margin: 40px 0;*/
 	padding: 30px 0;
 	background-image: url(http://www.eliberico.com/wp-content/uploads/2014/05/estadios-futbol.jpg);
 	background-size: cover;
@@ -179,10 +177,7 @@ body {
 	text-align: justify;
 }
 
-#historia-container img {
-	width: 150px;
 
-}
 
 .historia-container {
 	background-color: rgba(90,90,90,.8);
@@ -196,6 +191,7 @@ body {
 	background-image: url(http://futbol.as.com/futbol/imagenes/2016/11/19/album/1479576023_242250_1479586286_album_grande.jpg);
 	background-size: cover;
 	padding: 30px 0;
+	border-bottom: 4px solid white;
 
 	
 } 
@@ -204,6 +200,7 @@ body {
  	background-image: url(http://www.elclasicofutbol5.com/wp-content/uploads/2015/06/cancha-dimensiones-futbol.jpg);
 	background-size: contain;
 	height: 630px;
+
 }
 
 #porteros-container img {
@@ -326,3 +323,93 @@ body {
 
 
 /*Sección para Jugadores*/
+
+/*Sección footer*/
+
+#footer-container {
+	background-color: #8C6098;
+	padding: 40px 0;
+}
+
+#formulario-container label,
+#formulario-container .hollow {
+	color: white;
+}
+
+#formulario-container .hollow {
+	border-color: white;
+}
+#formulario-container .hollow:hover {
+	border-color: #3a0742; 
+}
+
+#medios-container img {
+	border-radius: 180px;
+	width: 20%;
+}
+
+#mapa-desitio-container h3 {
+	font-family: Francois One, sans-serif;
+	font-size: 30px;
+	color: white;
+	text-transform: uppercase;
+	text-align: right;
+}
+
+#mapa-desitio-container a {
+	font-family: Francois One, sans-serif;
+	font-size: 20px;
+	color: white;
+	display: block;
+	text-align: right;
+}
+/*Sección footer*/
+
+
+/*Media Queries*/
+@media screen and (max-width: 39.9375em) {
+	#banner-container {
+		margin-left: 0px;
+		margin-right: 0px;
+		max-height: auto;
+	}
+
+	#banner-container img{
+		height: 45vh;
+	}
+
+	#historia-container img {
+    width: 120px;
+	}
+
+	#historia-container p {
+    font-family: anton sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+    line-height: initial;
+	}
+	#historia-container h2 {
+	font-family: play bold sans-serif;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: white;
+	margin-bottom: 25px;
+	}
+
+
+
+}
+
+@media screen and (min-width: 64em) {
+	.top-bar-right {
+		margin-right: 50px;
+	}
+	#banner-container {
+		margin-left: 120px;
+		margin-right: 120px;
+	}
+
+}
+
+/*Media Queries*/

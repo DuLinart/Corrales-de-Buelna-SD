@@ -8,11 +8,12 @@
     <title>Corrales de Buelna SD</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="foundation-icons/foundation-icons.css">
   </head>
   <body>
 
     <div class="off-canvas-wrapper">
-    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
       <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
 
         <!-- Close button -->
@@ -47,44 +48,45 @@
 
       </div>
 
-      <div class="off-canvas-content" data-off-canvas-content>
-        <section id="encabezado-container" >
+      <div class="off-canvas-content" >
+        <section id="encabezado-container" data-off-canvas-content>
 
-        <header id="header-container">
-         
-          <div class="menu-off-canvas show-for-small-only">
-            <a class="text-center align-center " href="#" data-toggle="offCanvas">Menu</a>
-          </div>
+          <div id="header-container" >
 
-          <div class="top-bar row align-center show-for-medium">
-            <div class="top-bar-left">
-              <ul class="dropdown menu align-center" data-dropdown-menu data-magellan>
-                <a class="logo" href="index.html"><img src="assets/img/Escudo_CorralesdeBuelnaSD.png" alt="Logo Corrales de Buelna"></a>
-                <li class="active"><a href="index.html">Inicio</a></li>
-                <li ><a href="#historia-container">Historia</a></li>
-                <li>
-                  <a href="#jugadores-container">Jugadores</a>
-                  <ul class="menu vertical">
-                    <li class="porteros"><a href="#">Porteros</a></li>
-                    <li class="defensas"><a  href="#">Defensas</a></li>
-                    <li class="medios"><a href="#">Medios</a></li>
-                    <li class="delanteros"><a href="#">Delanteros</a></li>
-                    <li class="entrenadores"><a href="#">Entrenadores</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Reglamento</a></li>
-                <li><a href="#">Contacto</a></li>
-              </ul>
+            <div class="menu-off-canvas show-for-small-only"  >
+              <a class="text-center align-center " href="#" data-toggle="offCanvas"><i class="fi-list-thumbnails"></i> Menu</a>
             </div>
-            <div class="top-bar-right medium-12">
-              <ul class="menu align-center">
-                <li><input type="search" class="text-center" placeholder="¿Qué buscas?"></li>
-                <li><button type="button" class="button">Buscar</button></li>
-              </ul>
-            </div>
-          </div>
-        </header>
 
+            <div class="top-bar row align-center show-for-medium">
+              <div class="top-bar-left">
+                <ul class="dropdown menu align-center" data-dropdown-menu data-magellan>
+                  <a class="logo" href="index.html"><img src="assets/img/Escudo_CorralesdeBuelnaSD.png" alt="Logo Corrales de Buelna"></a>
+                  <li class="active"><a href="index.html">Inicio</a></li>
+                  <li ><a href="#historia-container">Historia</a></li>
+                  <li>
+                    <a href="#jugadores-container">Jugadores</a>
+                    <ul class="menu vertical">
+                      <li class="porteros"><a href="#">Porteros</a></li>
+                      <li class="defensas"><a  href="#">Defensas</a></li>
+                      <li class="medios"><a href="#">Medios</a></li>
+                      <li class="delanteros"><a href="#">Delanteros</a></li>
+                      <li class="entrenadores"><a href="#">Entrenadores</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Reglamento</a></li>
+                  <li><a href="#">Contacto</a></li>
+                </ul>
+              </div>
+              <div class="top-bar-right medium-12">
+                <ul class="menu align-center">
+                  <li><input type="search" class="text-center" placeholder="¿Qué buscas?"></li>
+                  <li><button type="button" class="button">Buscar</button></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        
+                              <!-- Inicia Banner Container -->
         <div id="banner-container">
           <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
             <ul class="orbit-container">
@@ -185,13 +187,69 @@
           </div>
         </div>
       </section>
-      </div>
+                        <!-- Termina Jugadores Container -->
+                        <!-- Inicia footer Container -->
+      <section id="footer-container">
+        <div class="row align-middle">
+
+          <div id="formulario-container" class="large-5 align-spaced">
+            <form action="https://formspree.io/hola@linarte.mx" method="POST">
+              <div class="formulario row columns small-12 medium-10">
+                <div class="input-group">
+                  <span class="input-group-label"><i class="fi-torsos-all"></i></span>
+                  <input type="text" name="nombre" class="input-group-field" placeholder="Escribe tu nombre">
+                </div>
+
+                <div class="input-group">
+                  <span class="input-group-label"><i class="fi-mail"></i></span>
+                  <input type="mail" name="mail" class="input-group-field" placeholder="tu@correo.com">
+                </div>
+
+                <div class="input-group">
+                  <span class="input-group-label"><i class="fi-telephone"></i></span>
+                  <input type="text" name="telefono" class="input-group-field" placeholder="tu teléfono en 10 digitos">
+                </div>
+
+                <div class="input-group">
+                  <span class="input-group-label"><i class="fi-pencil"></i></span>
+                  <textarea name="mensaje" class=" input-group-field" placeholder="Escribe tu mensaje" placeholder="small-12.columns"></textarea>
+                </div>
+
+                <div class="large-12 columns">
+                  <input id="avisoPrivacidad" type="checkbox"><label for="avisoPrivacidad">He leído y acepto el aviso de privacidad.</label>
+                </div>
+
+                <div class="input-group-button ">
+                  <input type="submit" class="button hollow" value="Enviar"/>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div id="medios-container" class="large-4 text-center">
+            <h3>¡Siguenos!</h3>
+            <a target="_blank" href="https://www.facebook.com/groups/679172458781790/?fref=ts" ><img src="assets/iconos/facebook-3.png" alt="logo facebook"></a>
+            <a href="whatsapp://send?text= http://www.tuweb.es/urlquequierescompartir/" data-action="share/whatsapp/share"><img  src="assets/iconos/whatsapp-3.png"></a>
+            <a target="_blank" href="https://www.facebook.com/groups/679172458781790/?fref=ts" ><img src="assets/iconos/instagram.png" alt="logo facebook"></a>
+          </div>
+          <div id="mapa-desitio-container" class="large-3 text-center align-center">
+            <h3>Mapa de sitio</h3>
+            <a href="index.html">Inicio</a>
+            <a href="#historia-container">Historia</a>
+            <a href="#jugadores-container">Jugadores</a>
+            <a href="#enlaces-container">Fútbol del mundo</a>
+          </div>
+        </div>
+      </section>
+
+                        <!-- Termina footer Container -->
+
     </div>
   </div>
+</div>
       
-                        <!-- Termina Banner Container -->
+                        
       
-                        <!-- Termina Jugadores Container -->
+                        
 
 
     <script src="js/vendor/jquery.js"></script>
