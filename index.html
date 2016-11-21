@@ -11,16 +11,18 @@
   </head>
   <body>
     <div id="proyect-container">
+      
+                        <!-- Termina Banner Container -->
       <section>
         <header id="header-container">
           <div class="top-bar row align-center show-for-medium">
             <div class="top-bar-left">
-              <ul class="dropdown menu align-center" data-dropdown-menu>
+              <ul class="dropdown menu align-center" data-dropdown-menu data-magellan>
                 <a class="logo" href="index.html"><img src="assets/img/Escudo_CorralesdeBuelnaSD.png" alt="Logo Corrales de Buelna"></a>
-                <li class="active"><a href="#">Inicio</a></li>
-                <li ><a href="#">Historia</a></li>
+                <li class="active"><a href="index.html">Inicio</a></li>
+                <li ><a href="#historia-container">Historia</a></li>
                 <li>
-                  <a href="#">Jugadores</a>
+                  <a href="#jugadores-container">Jugadores</a>
                   <ul class="menu vertical">
                     <li class="porteros"><a href="#">Porteros</a></li>
                     <li class="defensas"><a  href="#">Defensas</a></li>
@@ -73,6 +75,73 @@
           </div>
         </div>
       </section>
+                        <!-- Termina Banner Container -->
+
+                        <!-- Inicia Historia Container -->
+      <section id="historia-container" data-magellan-target="historia-container">
+        <div class="row historia-container">
+          <div class="columns text-center">
+              <img src="assets/img/Escudo_CorralesdeBuelnaSD.png">
+              <h2>Fundación Corrales de Buelna S.D.</h2>
+              <p>Después de participar con otro equipo de la liga por algunas temporadas; en 2014 se decidió conformar un equipo propio enfocado en agrupar a los jugadores que venían jugando por varios años y sus familias en un espacio de diversión y esparcimiento.</p>
+
+              <p>Iniciamos en segunda división con brios y hambre de victorias, durante nuestro primer torneo fuimos subcampeón de copa, lo cual nos brindó la oportunidad de ascender a Primera División Varonil.</p>
+
+              <p>Gracias al esfuerzo de la directiva y jugadores, logramos ser campeones del torneo de apertura 2015 en el mismo torneo que ascendimos a primera división, lo cual para todos nosotros es un gran logo.</p>
+
+              <p>Ahora lo único que nos queda es seguir compitiendo, disfrutando y viviendo la filosofía de la liga.</p>
+              
+            </div>
+        </div>
+        
+      </section>
+                        <!-- Termina Historia Container -->
+
+                        <!-- Inicia Jugadores Container -->
+      <section id="jugadores-container" data-magellan-target="jugadores-container">
+        
+        <div id="jugadores-botones" class="row align-spaced ">
+            <button class="button porteros show-for-medium" href="#">Porteros</button>
+            <button class="button defensas show-for-medium" href="#">Defensas</button>
+            <button class="button medios show-for-medium" href="#">Medios</button>
+            <button class="button delanteros show-for-medium" href="#">Delanteros</button>
+            <button class="button entrenadores show-for-medium" href="#">Entrenadores</button>
+
+
+            <button class="button btn-small small-8 show-for-small-only" type="button" data-toggle="boton-jugadores-small">Jugadores</button>
+              <div class="dropdown-pane" id="boton-jugadores-small" data-dropdown data-auto-focus="true">
+                
+                <ul class="menu vertical small-12 align-center text-center show-for-small-only">
+                    <li class="porterosSmall"><a href="#">Porteros</a></li>
+                    <li class="defensasSmall"><a  href="#">Defensas</a></li>
+                    <li class="mediosSmall"><a href="#">Medios</a></li>
+                    <li class="delanterosSmall"><a href="#">Delanteros</a></li>
+                    <li class="entrenadoresSmall"><a href="#">Entrenadores</a></li>
+                  </ul>
+             </div>
+        </div>
+
+
+        <div class="row jugadores-container">
+
+          <div id="porteros-container" class=" text-center align-center columns large-3 ">
+            <h3>Porteros</h3>
+            <!-- <img src="assets/img/Porteros/Dario-Camacho.png" alt=" Tarjeta Dario Camacho">
+            <img src="assets/img/Porteros/Julio-Miranda.png" alt=" Tarjeta Julio Miranda">
+            <img src="assets/img/Porteros/Rodrigo-Colsa.png" alt=" Tarjeta Rodrigo Colsa"> -->
+            <div class="reveal" id="Dario-Camacho" data-reveal>
+              <img src="assets/img/Porteros/Dario-Camacho.png" alt=" Tarjeta Dario Camacho">
+              <p>Camiseta 1</p>
+              <p>Apodo: Daris</p>
+              <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <p><a data-open="Dario-Camacho"><button class="btn button">Dario Camacho</button></a></p>
+          </div>
+        </div>
+      </section>
+                        <!-- Termina Jugadores Container -->
     </div>
 
     <script src="js/vendor/jquery.js"></script>
