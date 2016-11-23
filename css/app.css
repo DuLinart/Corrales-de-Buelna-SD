@@ -345,7 +345,7 @@ body {
 
 #medios-container img {
 	border-radius: 180px;
-	width: 20%;
+	width: 18%;
 }
 
 #mapa-desitio-container h3 {
@@ -362,6 +362,27 @@ body {
 	color: white;
 	display: block;
 	text-align: right;
+}
+
+#formulario-container h2 {
+	font-family: PLay, sans-serif;
+	font-size: 40px;
+	color: white;
+}
+
+#medios-container h3 {
+	font-family: PLay, sans-serif;
+	font-size: 40px;
+	color: white;
+}
+
+#datos-adicionales-container p,
+#datos-adicionales1-container a,
+#datos-adicionales2-container p,
+#datos-adicionales2-container a {
+	margin:0 auto;
+	color: white;
+	font-family: PLay, sans-serif;
 }
 /*Sección footer*/
 
@@ -397,9 +418,50 @@ body {
 	margin-bottom: 25px;
 	}
 
+	#medios-container,
+	#mapa-desitio-container {
+		margin-top: 35px;
+	}
 
+	#mapa-desitio-container {
+		margin-bottom: 30px;
+	}
 
+	#mapa-desitio-container h3,
+	#mapa-desitio-container a {
+		text-align: center;
+	}
+
+	#medios-container img {
+	border-radius: 180px;
+	width: 10%;
+	}
 }
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+	#banner-container{
+		margin: 0px;
+	}
+	#medios-container,
+	#mapa-desitio-container {
+		margin-top: 35px;
+	}
+
+	#mapa-desitio-container h3,
+	#mapa-desitio-container a {
+		text-align: center;
+	}
+
+	#medios-container img {
+	border-radius: 180px;
+	width: 10%;
+	}
+
+	#mapa-desitio-container {
+		margin-bottom: 30px;
+	}
+
+ }
 
 @media screen and (min-width: 64em) {
 	.top-bar-right {
@@ -409,6 +471,8 @@ body {
 		margin-left: 120px;
 		margin-right: 120px;
 	}
+
+
 
 }
 
