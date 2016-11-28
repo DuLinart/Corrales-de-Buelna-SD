@@ -74,14 +74,14 @@ body {
 
 .menu .active > a {
 	border-radius: 5px;
-	background-color: #3e0255;
-
+	background-color: #8C6098;
+	
 }
 
-.menu .active > a:hover {
+/*.menu .active > a:hover {
 	background-color: #3e0255;
 }
-
+*/
 .menu > li > a:hover {
 	background-color: #8C6098;
 	border-radius: 5px;
@@ -205,8 +205,12 @@ body {
 
 }
 
-#porteros-container .Porteros-img {
-	width: 15%;
+#porteros-container img,
+#defensas-container img,
+#medios-container img,
+#delanteros-container img,
+#entrenadores-container img {
+	width: 20%;
 	border-radius: 200px;
 	margin: 0px 30px;
 }
@@ -332,11 +336,44 @@ body {
 
 #Dario-Camacho,
 #Colsa,
-#Benito {
+#Benito,
+#AlfonsoM,
+#EduardoM,
+#ManuelO,
+#EdgarB,
+#Biro,
+#Oso,
+#Nacho,
+#Chipi,
+#Jimmy,
+#Ule,
+#Gerry {
 	display: block;
     height: auto;
-    width: 250px;
+    width: 300px;
 }
+
+#Dario-Camacho p,
+#Colsa p,
+#Benito p,
+#AlfonsoM p,
+#EduardoM p,
+#ManuelO p,
+#EdgarB p,
+#Biro p,
+#Oso p,
+#Nacho p,
+#Chipi p,
+#Jimmy p,
+#Ule p,
+#Gerry p {
+	margin: 0 7px;
+	font-family: Play, sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+	
+}
+
     
 
 
@@ -438,15 +475,23 @@ body {
 	.jugadores-container  {
 		background-image: url('../assets/img/cancha-vertical-futbol.jpg');
 		background-size: cover;
+		height: 650px;
 	}
 
-	#Dario-Camacho,
-	#Colsa,
-	#Benito {
-	display: block;
-    height: 50vh;
-    width: 100vw;
+	.reveal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1005;
+    background-color: rgba(10, 10, 10, 0.45);
+    overflow-y: scroll;
+    margin-left: 37px;
+    height: 400px;
 	}
+
 
 	#medios-container,
 	#mapa-desitio-container {
@@ -499,6 +544,18 @@ body {
 	margin-bottom: 25px;
 	font-weight: bold;
 	}
+	#mapa-desitio-container a:hover {
+	font-family: Francois One, sans-serif;
+	font-size: 20px;
+	color: #520779;
+	display: block;
+	text-align: center;
+	}
+
+	.jugadores-container {
+    background-image: url(http://www.elclasicofutbol5.com/wp-content/uploads/2015/06/cancha-dimensiones-futbol.jpg);
+    background-size: contain;
+    height: 440px;
 
  }
 
@@ -509,6 +566,14 @@ body {
 	#banner-container {
 		margin-left: 120px;
 		margin-right: 120px;
+	}
+
+	#mapa-desitio-container a:hover {
+	font-family: Francois One, sans-serif;
+	font-size: 20px;
+	color: #520779;
+	display: block;
+	text-align: right;
 	}
 
 
