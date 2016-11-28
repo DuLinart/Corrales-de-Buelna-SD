@@ -167,14 +167,16 @@ body {
 	text-transform: uppercase;
 	color: white;
 	margin-bottom: 25px;
+	font-weight: bold;
 }
 
 #historia-container p {
 	font-family: anton  sans-serif;
 	font-size: 25px;
 	color: white;
-	font-weight: bold;
-	text-align: justify;
+	/*font-weight: bold;
+*/	text-align: justify;
+	line-height: 1;
 }
 
 
@@ -203,10 +205,10 @@ body {
 
 }
 
-#porteros-container img {
-	width: 45%;
-	display: block;
-	margin: 10px 0;
+#porteros-container .Porteros-img {
+	width: 15%;
+	border-radius: 200px;
+	margin: 0px 30px;
 }
 
 #jugadores-botones .porteros {
@@ -321,6 +323,22 @@ body {
 }
 
 
+/*#Dario-Camacho img {
+	width: 300px;
+	text-align: center;
+}*/
+
+
+
+#Dario-Camacho,
+#Colsa,
+#Benito {
+	display: block;
+    height: auto;
+    width: 250px;
+}
+    
+
 
 /*Sección para Jugadores*/
 
@@ -417,6 +435,18 @@ body {
 	color: white;
 	margin-bottom: 25px;
 	}
+	.jugadores-container  {
+		background-image: url('../assets/img/cancha-vertical-futbol.jpg');
+		background-size: cover;
+	}
+
+	#Dario-Camacho,
+	#Colsa,
+	#Benito {
+	display: block;
+    height: 50vh;
+    width: 100vw;
+	}
 
 	#medios-container,
 	#mapa-desitio-container {
@@ -459,6 +489,15 @@ body {
 
 	#mapa-desitio-container {
 		margin-bottom: 30px;
+	}
+
+	#historia-container h2 {
+	font-family: play bold sans-serif;
+	font-size: 25px;
+	text-transform: uppercase;
+	color: white;
+	margin-bottom: 25px;
+	font-weight: bold;
 	}
 
  }

@@ -24,7 +24,7 @@
         <!-- Menu -->
           <nav>
             <div class="is-drilldown">
-              <ul class="vertical menu align-center" id="menu-off-canvas" data-drilldown data-magellan">
+              <ul class="vertical menu align-center" id="menu-off-canvas" data-drilldown>
           
               <li><a href="index.html">Inicio</a></li>
               <li ><a href="#historia-container">Historia</a></li>
@@ -39,7 +39,7 @@
                   </ul>
                 </li>
                 <li><a href="#">Reglamento</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#footer-container">Contacto</a></li>
               </ul>
             </div>
             
@@ -59,7 +59,8 @@
 
             <div class="top-bar row align-center show-for-medium">
               <div class="top-bar-left">
-                <ul class="dropdown menu align-center" data-dropdown-menu data-magellan>
+                <nav data-magellan>
+                  <ul class="dropdown menu align-center" data-dropdown-menu >
                   <a class="logo" href="index.html"><img src="assets/img/Escudo_CorralesdeBuelnaSD.png" alt="Logo Corrales de Buelna"></a>
                   <li class="active"><a href="index.html">Inicio</a></li>
                   <li ><a href="#historia-container">Historia</a></li>
@@ -74,8 +75,10 @@
                     </ul>
                   </li>
                   <li><a href="#">Reglamento</a></li>
-                  <li><a href="#">Contacto</a></li>
+                  <li><a href="#footer-container">Contacto</a></li>
                 </ul>
+                </nav>
+                
               </div>
               <div class="top-bar-right medium-12">
                 <ul class="menu align-center">
@@ -168,14 +171,13 @@
         </div>
 
 
-        <div class="row jugadores-container">
+        <div class="row jugadores-container align-middle">
 
-          <div id="porteros-container" class=" text-center align-center columns large-3 ">
-            <h3>Porteros</h3>
+          <div id="porteros-container" class=" text-center align-spaced  small-12 large-12 ">
             <!-- <img src="assets/img/Porteros/Dario-Camacho.png" alt=" Tarjeta Dario Camacho">
             <img src="assets/img/Porteros/Julio-Miranda.png" alt=" Tarjeta Julio Miranda">
             <img src="assets/img/Porteros/Rodrigo-Colsa.png" alt=" Tarjeta Rodrigo Colsa"> -->
-            <div class="reveal" id="Dario-Camacho" data-reveal>
+            <div class="reveal text-center" id="Dario-Camacho" data-reveal>
               <img src="assets/img/Porteros/Dario-Camacho.png" alt=" Tarjeta Dario Camacho">
               <p>Camiseta 1</p>
               <p>Apodo: Daris</p>
@@ -183,13 +185,40 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <p><a data-open="Dario-Camacho"><button class="btn button">Dario Camacho</button></a></p>
+              <a data-open="Dario-Camacho"> <img class="Porteros-img" src="assets/img/Jugadores-sin-fondo/Dario Camacho.png"><!-- <button class="btn button">Dario Camacho</button> --></a>
+
+            
+            <div class="reveal text-center" id="Colsa" data-reveal>
+              <img src="assets/img/Porteros/Rodrigo-Colsa.png" alt=" Tarjeta Rodrigo Colsa">
+              <p>Camiseta 1</p>
+              <p>Apodo: Daris</p>
+              <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <a data-open="Colsa"> <img class="Porteros-img" src="assets/img/Jugadores-sin-fondo/Rodrigo Colsa.png"><!-- <button class="btn button"></button> --></a>
+
+            <div class="reveal text-center" id="Benito" data-reveal>
+              <img src="assets/img/Porteros/Julio-Miranda.png" alt=" Tarjeta Julio Miranda">
+              <p>Camiseta 1</p>
+              <p>Apodo: Daris</p>
+              <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <a data-open="Benito"> <img class="Porteros-img" src="assets/img/Jugadores-sin-fondo/Julio Miranda.png"><!-- <button class="btn button"></button> --></a>
+
+            
+
+
+
+            
           </div>
         </div>
       </section>
                         <!-- Termina Jugadores Container -->
                         <!-- Inicia footer Container -->
-      <section id="footer-container">
+      <section id="footer-container" data-magellan-target="footer-container">
         <div class="row align-center align-middle">
 
           <div id="formulario-container" class="small-10 medium-6 large-5 align-spaced">
