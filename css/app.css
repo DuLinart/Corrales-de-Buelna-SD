@@ -379,6 +379,24 @@ body {
 
 /*Sección para Jugadores*/
 
+/*Sección para enlaces*/
+
+#enlaces-container {
+	background-color: orange;
+	height: 600px;
+	border-bottom: 4px solid white;
+}
+
+#Caja1-enlace,
+#Caja2-enlace,
+#Caja3-enlace {
+	border: 1px solid red;
+	height: auto;
+	margin: auto 0;
+}
+
+
+/*Sección para enlaces*/
 /*Sección footer*/
 
 #footer-container {
