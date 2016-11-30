@@ -207,12 +207,12 @@ body {
 
 #porteros-container img,
 #defensas-container img,
-#medios-container img,
+#medioC-container img,
 #delanteros-container img,
 #entrenadores-container img {
 	width: 20%;
 	border-radius: 200px;
-	margin: 0px 30px;
+	margin: 0px 10px;
 }
 
 #jugadores-botones .porteros {
@@ -383,8 +383,9 @@ body {
 
 #enlaces-container {
 	background-color: orange;
-	height: 600px;
+	height: auto;
 	border-bottom: 4px solid white;
+	padding: 30px 0;
 }
 
 #Caja1-enlace,
@@ -392,7 +393,7 @@ body {
 #Caja3-enlace {
 	border: 1px solid red;
 	height: auto;
-	margin: auto 0;
+	margin: 10px 0 10px 0;
 }
 
 
@@ -528,6 +529,12 @@ body {
 	#medios-container img {
 	border-radius: 180px;
 	width: 10%;
+	}
+
+	#formulario-container label,
+	#formulario-container .hollow {
+	color: white;
+	font-size: 13px;
 	}
 }
 
